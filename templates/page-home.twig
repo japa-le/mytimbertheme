@@ -1,0 +1,105 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+			<section class="article-content">
+				<div class="titled">
+					<h1 class="article-h1">{{post.title}}</h1>
+				</div>
+				<div class="article-body">
+					{{post.content}}
+				</div>
+				<div class="full-body">
+					<div class="container">
+						<div class="title-widget">
+							<h2>My Portfolio</h2>
+						</div>
+						<div class="mycarousel">
+							{% if allpost|length %}
+								{% for post in allpost %}
+									<div class="card">
+										<div class="card-image">
+											{% if post.thumbnail.src %}
+												<img src="{{post.thumbnail.src}}"/>
+											{% endif %}
+										</div>
+										<div class="row cardrow">
+											<div class="card-item">
+												<div class="card-title">
+													{{ post.title }}
+												</div>
+												<div class="card-excerpt">
+													<p>{{post.preview.length(25)}}</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								{% endfor %}
+							{% endif %}
+						</div>
+					</div>
+				</div>
+
+				<img class="staticimg" src="https://janosp.net/wp-content/uploads/2023/03/bangkok3.jpg" alt="city">
+
+				<div class="full-body2">
+					<div class="container">
+						<div class="title-widget whi">
+							<h2>My Skills</h2>
+						</div>
+						<div class="row">
+							<div class="column droptext">
+								<div class="dropdown-box">
+									<div class="dropdown-field kave-btn">
+										<span class="kave-line"></span>
+										<!--<h3 class="drop-item">
+																					<p>DEMO</p>
+																				</h3>-->
+										IT PROJECT MANAGEMENT
+										<div class="drop-text">
+											<p>After graduating with a degree in Business Information Technology at the Zurich University of Applied Sciences (ZHAW), I started my career as a developer, working on a variety of web projects. Over the past year, I've gained valuable experience in developing SEO friendly websites, as well as collaborating with cross-functional teams.
+												
+																									In addition to my development work, I've also had the opportunity to take on project management and business analysis responsibilities. This has allowed me to gain a broader perspective on the role of technology in supporting business goals and processes.
+												
+																									Overall, my education in Business Information Technology has given me a strong foundation in both business and technology, which has been invaluable in my career so far. I'm excited to continue growing my skills and contributing to the success of future projects.</p>
+										</div>
+									</div>
+									<div id="first" class="dropdown-field kave-btn">
+										<span class="kave-line"></span>
+										WORDPRESS
+										<div class="drop-text">
+											<p>In WordPress, I have specialized in working with the Elementor page builder plugin, as well as developing custom widgets when it's needed. I am comfortable using the plugin to create responsive and visually appealing websites that meet my clients' needs. In addition, I have developed custom themes (this website for example is built with my own custom theme and developed with the timber plugin which uses the Twig Template-Engine) and easy custom plugins to provide the best solutions for my clients. I have also gained knowledge in WordPress best practices and troubleshooting techniques, which has enabled me to efficiently debug and fix any issues that arise during development. My ability to communicate and work collaboratively with clients and the internal teams has helped me deliver quality projects within budget and on time.</p>
+										</div>
+									</div>
+									<div id="second" class="dropdown-field kave-btn">
+										<span class="kave-line"></span>
+										SEO
+										<div class="drop-text">
+											<p>During my previous job, I have also had the opportunity to work closely with SEO teams while was responsible for the SEO on-site implementations. I understand the importance of optimizing website content for search engines, and have experience implementing on-page SEO techniques such as keyword research, meta tags, heading tags, and internal linking. I am also familiar with Google Analytics and Google Search Console, which allows me to analyze website traffic and improve website performance. My experience working with SEO teams has allowed me to understand the importance of a website's structure, content, and user experience in driving organic traffic and improving search engine rankings. I am committed to delivering websites that are both visually appealing and optimized for search engines.</p>
+										</div>
+									</div>
+									<div id="third" class="dropdown-field kave-btn">
+										<span class="kave-line"></span>
+										JAVASCRIPT
+										<div class="drop-text">
+											<p>Along with my experience in WordPress development and SEO, I also have a good knowledge of JavaScript and jQuery libraries and scripts. I am proficient in using JavaScript to create interactive user interfaces and dynamic web applications. My knowledge of jQuery allows me to efficiently manipulate the DOM and handle events.My knowledge of JavaScript and jQuery enables me to create customized solutions for clients that enhance the user experience and improve website functionality. In addition, I have some basic knowledge in React but in the next step, I will expand my knowledge by learning the Vue.js framework. I am committed to staying up-to-date with the latest technologies and best practices in web development, and I am always looking for opportunities to improve my skills.</p>
+										</div>
+									</div>
+									<div id="fourth" class="dropdown-field kave-btn">
+										<span class="kave-line"></span>
+										PHP
+										<div class="drop-text">
+											<p>Due to working with WordPress, I have experience using PHP as a backend language to create custom themes and plugins. I am proficient in writing PHP code that utilizes WordPress functions, actions, and filters to extend WordPress functionality and add new features. I also have knowledge of WordPress hooks and how to use them to modify theme templates and add options to themes. My experience with PHP has enabled me to create custom WordPress themes according to my clients needs and provide unique user experiences. I am committed to staying up-to-date with the latest PHP development practices and using my skills to create high-quality solutions for clients.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<!-- /content-wrapper -->
+{% endblock %}

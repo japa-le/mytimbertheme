@@ -1,0 +1,107 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+			<section class="article-content">
+				<h1 class="article-h1">{{post.title}}</h1>
+				<div class="article-body">
+					{{post.content}}
+				</div>
+				<div class="full-body-about adpad">
+					<div class="container">
+						<div class="title-widget">
+							<h2>My Story</h2>
+						</div>
+						<div class="row colspace">
+							<div class="column wfull">
+								<div class="textcl">
+									<p>I started my professional career in the automotive industry, working as a mechanic. While I enjoyed the work, I found myself more addicted to the world of information technology. Then finally I got a job as an IT Service Engineer and in this job it has been confirmed that IT was the right career field for me.<br><br>
+
+										I decided to pursue a degree in business information technology at the ZHAW, a program that was very future-oriented and only required a technical maturity to attend. I started the technical maturity program with 26 and then started at the ZHAW right after. It was a challenging program, but with hard work and dedication, I was able to complete the program and earn my degree at the age of 32.</p>
+								</div>
+							</div>
+							<div class="column wfull">
+								<div class="imagecl">
+									<a href="https://janosp.net/wp-content/uploads/2023/03/ZHAW.jpeg" data-fancybox="" data-caption="">
+										<img src="https://janosp.net/wp-content/uploads/2023/03/ZHAW.jpeg" alt="school">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row colspace visibcol">
+							<div class="column wfull">
+								<div class="imagecl2">
+									<a href="https://janosp.net/wp-content/uploads/2023/03/chatgptZHAW.png" data-fancybox="" data-caption="">
+										<img src="https://janosp.net/wp-content/uploads/2023/03/chatgptZHAW.png" alt="ChatgptZHAW">
+									</a>
+								</div>
+							</div>
+							<div class="column wfull">
+								<div class="textcl1">
+									<p>In this section I would like to explain the study program in more detail, because based on my experiences I am always confronted with the fact that people outside of Switzerland underestimate my skills.<br><br>
+										This study program was made to eliminate the shortage of skilled workers in the trained application area. It is a fully recognized education to get the best jobs in Switzerland. Even as a career changer, one is qualified for a job as a project manager, business analyst, product owner or, with the skills I have acquired in my previous job, as a developer (what I would prefer to work in).<br><br>
+										In the Screenshot on the left hand side you will find what Chatgpt says about this program.</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row colspace hiddencol">
+							<div class="column wfull">
+								<div class="textcl1">
+									<p>In this section I would like to explain the study program in more detail, because based on my experiences I am always confronted with the fact that people outside of Switzerland underestimate my skills.<br><br>
+										This study program was made to eliminate the shortage of skilled workers in the trained application area. It is a fully recognized education to get the best jobs in Switzerland. Even as a career changer, one is qualified for a job as a project manager, business analyst, product owner or, with the skills I have acquired in my previous job, as a developer (what I would prefer to work in).<br><br>
+										In the Screenshot below you will find what Chatgpt says about this program.</p>
+								</div>
+							</div>
+							<div class="column wfull">
+								<div class="imagecl2">
+									<a href="https://janosp.net/wp-content/uploads/2023/03/chatgptZHAW.png" data-fancybox="" data-caption="">
+										<img src="https://janosp.net/wp-content/uploads/2023/03/chatgptZHAW.png" alt="ChatgptZHAW">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="row colspace">
+							<div class="column wfull">
+								<div class="textcl">
+									<p>After I finished my university, I felt ready for a new challenge. I had always wanted to explore new places and improve my English language skills, so I decided to move to Bangkok. It was a big step, but I was excited to see what opportunities awaited me.
+																				
+										I found a job at a digital marketing agency. While the job was challenging and rewarding in many ways, I ultimately realized that it wasn't the right fit for me. I made the difficult decision to resign and start searching for a new opportunity.<br><br>
+
+										Currently I study Thai language as I believe that learning the local language is important to fully immerse oneself in a new culture.
+																				
+										Now, as I continue my job search, I am excited about the possibilities that lie ahead. I know that finding the right job can take time and patience, but I am confident that I will find a position that is a good fit for my skills and interests.</p>
+								</div>
+							</div>
+							<div class="column wfull">
+								<div class="imagecl">
+									<a href="https://janosp.net/wp-content/uploads/2023/03/bangkok1.jpg" data-fancybox="" data-caption="">
+										<img src="https://janosp.net/wp-content/uploads/2023/03/bangkok1.jpg" alt="school">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="textcl2">
+							<p>Overall, my journey has been one of learning and growth. I have pursued my passion for technology, challenged myself with a rigorous academic program, and explored new places and cultures that I want to show you in the following image slider.<br> While there have been obstacles along the way, I am grateful for the experiences that have brought me to where I am today.
+							</p>
+						</div>
+						<div class="row">
+							<div class="imageslider">
+								{% for image in my_gallery %}
+									<div class="images">
+										<a href="{{image.imageURL}}" data-fancybox="gallery" data-caption="">
+											<img src="{{image.thumbURL}}" alt="{{image.alttext}}" class="jpsize">
+										</a>
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<!-- /content-wrapper -->
+{% endblock %}

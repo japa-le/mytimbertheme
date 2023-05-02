@@ -1,0 +1,38 @@
+<div class="wrapper headwrap">
+	<div class="jp-border">
+		<div class="container headcon">
+			{% if logo_url %}
+				<div class="custom-logo-footer">
+					<img src="{{logo_url}}" alt="{{site.name}}">
+				</div>
+			{% else %}
+				<div class="hdr-logo" role="banner">
+					<a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
+				</div>
+			{% endif %}
+			<nav id="nav-main" class="nav-main nav-footer" role="navigation">
+				{% include "menu.twig" with {'items': menu_footer.get_items} %}
+			</nav>
+			<div class="jp-footerlast">
+				<div class="jp-fshortcode">
+					{{ function('do_shortcode', '[quform id="3" name="Contact Footer"]') }}
+				</div>
+				<div class="jp-icon">
+					<a href="https://line.me/ti/p/HoyOxfI-Sh">
+						<i class="fa-brands fa-line"></i>
+					</a>
+					<a href="https://janosp.net/wp-content/uploads/2023/04/Bildschirmfoto-2023-04-28-um-16.27.44.png" data-fancybox="" data-caption="">
+						<i class="fa-brands fa-whatsapp"></i>
+					</a>
+					<a href="#" onclick="return false;">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jp-copyright">
+	<p>Copyright
+		{{"now"|date('Y')}}</p>
+</div>

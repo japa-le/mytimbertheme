@@ -1,0 +1,28 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+			<section class="article-content">
+				<h1 class="article-h1">{{post.title}}</h1>
+				<div class="article-body">
+					<div class="full-body-about">
+						<div class="container">
+							<div class="jp-contact">
+								<p>Hi there,<br><br>
+								
+									Thank you for visiting my portfolio website. If you have a project in mind and would like to discuss it with me, please fill out the inquiry form below. I am always open to new projects and collaborations, and I would be happy to discuss your ideas with you.<br><br>
+									
+									Additionally, if you are interested in working with me, please feel free to reach out using the form below. I am always on the lookout for new job opportunities and would be happy to discuss my experience and qualifications with you further.<br><br>
+									
+									Thank you for considering my work and taking the time to visit my website. I look forward to hearing from you soon.</p>
+							</div>
+							{{post.content}}
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+	</div>
+	<!-- /content-wrapper -->
+{% endblock %}
