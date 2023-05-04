@@ -21,7 +21,7 @@ To display the Forms the shortcode from the Quform plugin needs to be pasted in 
 
 ## Support
 
-If you have any questions or issues with this theme, please contact us via the support forum on GitHub.
+If you have any questions or issues with this theme, please contact me on GitHub.
 
 ## Credits
 
