@@ -5,7 +5,7 @@ Have a look at the website built with this theme (https://janosp.net).
 
 ## Getting Started
 
-To use this theme, you will need to have WordPress installed on your web server with the Timber plugin activated. You can install this theme by uploading the ZIP file to the Themes section of your WordPress dashboard. Make sure you select the Timber-enabled theme after you activate the plugin (https://timber.github.io/docs/getting-started/setup/).
+
 
 ## Support
 
