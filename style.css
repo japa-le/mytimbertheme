@@ -110,11 +110,15 @@ h2 {
 
 .full-body {
     background: #e8e8e8;
-    margin-bottom: 215px;
+    margin-bottom: 275px;
 }
 
 .full-body-about {
     background: #e8e8e8;
+}
+
+.full-body-about img {
+    border-radius: 20px;
 }
 
 .title-widget {
@@ -605,7 +609,7 @@ article.post-type-post {
     }
 
     .full-body-about {
-        padding: 0 25px;
+        padding: 0 35px;
     }
 
     .textcl,
