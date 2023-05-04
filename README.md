@@ -1,6 +1,6 @@
 # WordPress Theme with Timber, Slick Carousel, NextGen Gallery, and Quform
 
-This is a custom WordPress theme built with Timber, a powerful plugin that enables developers to use Twig templates to render WordPress themes. The theme uses the Slick carousel to display a post portfolio to display a gallery created with the NextGen Gallery plugin. The contact form is built with the Quform plugin.
+This is a custom WordPress theme built with Timber, a powerful plugin that enables developers to use Twig templates to render WordPress themes. The theme uses the Slick carousel to display a post portfolio to display a gallery created with the NextGen Gallery plugin. The contact form is built with the Quform plugin.<br>
 Have a look at the website built with this theme (https://janosp.net).
 
 ## Getting Started
