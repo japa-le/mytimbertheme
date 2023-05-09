@@ -23,18 +23,25 @@
 
 $context = Timber::context();
 
-function my_custom_function()
-{
-	// Your custom code here
-	global $nggdb;
-	$gallery = $nggdb->get_gallery(4, 'sortorder', 'ASC', true, 0, 0);
-  return $gallery;
-}
+
 
 $timber_post     = new Timber\Post();
 $context['post'] = $timber_post;
 $context['allpost'] = Timber::get_posts(  array(
     'post_type' => array('post')
   ) );
-$context['my_gallery'] = my_custom_function();
+
+  if (class_exists('C_NextGEN_Bootstrap')) {
+
+    function my_custom_function()
+    {
+        // Your custom code here
+        global $nggdb;
+        $gallery = $nggdb->get_gallery(4, 'sortorder', 'ASC', true, 0, 0);
+        return $gallery;
+    }
+
+    $context['my_gallery'] = my_custom_function();
+}
+
 Timber::render( array( 'page-' . $timber_post->post_name . '.twig', 'page.twig' ), $context );
