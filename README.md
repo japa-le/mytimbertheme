@@ -5,9 +5,9 @@ Have a look at the website built with this theme (https://janosp.net).
 
 ## Getting Started
 
-To use this theme, you will need to have WordPress on your web server with the timber plugin and the NextGEN gallery plugin installed and activated. Then you can install this theme by uploading the ZIP file to the Themes section of your WordPress dashboard. Make sure you select the Timber-enabled theme after you activate the plugin (https://timber.github.io/docs/getting-started/setup/).<br><br>
+To use this theme, you will need to have WordPress on your web server with the Timber plugin. Then you can install this theme by uploading the ZIP file to the Themes section of your WordPress dashboard. Make sure you select the Timber-enabled theme after you activated the Timber plugin (https://timber.github.io/docs/getting-started/setup/).<br><br>
 In the WordPress backend you will need to create the pages with the slugs `home`, `about-me` and `contact` in order to show up properly.<br> To display the proper header and footer navigation create the menus with the name "Main" and "Main Footer".<br>
-To display the gallery slider edit the function in the `page.php` file with the correct gallery ID you have created with the NextGEN plugin.<br>
+To display the gallery slider install the NextGEN plugin and edit the function in the `page.php` file with the correct gallery ID you have created with the NextGEN plugin.<br>
 
 ```
 function my_custom_function()
