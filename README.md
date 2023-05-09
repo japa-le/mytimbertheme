@@ -17,7 +17,7 @@ function my_custom_function()
   	return $gallery;
 }
 ```
-To display the Forms the shortcode from the Quform plugin needs to be pasted in `footer.twig` file and in the `Contact` page you created.
+To display the Forms the shortcode of the Quform plugin needs to be pasted in `footer.twig` file and in the `Contact` page you created.
 
 ## Support
 
