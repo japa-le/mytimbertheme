@@ -5,11 +5,23 @@ Have a look at the website built with this theme (https://janosp.net).
 
 ## Getting Started
 
+To use this theme, you will need to have WordPress on your web server with the timber plugin and the NextGEN gallery plugin installed and activated. Then you can install this theme by uploading the ZIP file to the Themes section of your WordPress dashboard. Make sure you select the Timber-enabled theme after you activate the plugin (https://timber.github.io/docs/getting-started/setup/).<br><br>
+In the WordPress backend you will need to create the pages with the slugs `home`, `about-me` and `contact` in order to show up properly.<br> To display the proper header and footer navigation create the menus with the name "Main" and "Main Footer".<br>
+To display the gallery slider edit the function in the `page.php` file with the correct gallery ID you have created with the NextGEN plugin.<br>
 
+```
+function my_custom_function()
+{
+	global $nggdb;
+	$gallery = $nggdb->get_gallery(the_gallery_id, 'sortorder', 'ASC', true, 0, 0);
+  	return $gallery;
+}
+```
+To display the Forms the shortcode from the Quform plugin needs to be pasted in `footer.twig` file and in the `Contact` page you created.
 
 ## Support
 
-If you have any questions or issues with this theme, please contact us via the support forum on GitHub.
+If you have any questions or issues with this theme, please contact me on GitHub.
 
 ## Credits
 
